@@ -11,9 +11,6 @@ model-viewer {
     --progress-bar-color: rgba(255, 255, 255, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .hero {
@@ -43,6 +40,12 @@ model-viewer {
 }
 .product-card img {
     width: 100%;
+}
+
+model-viewer {
+    width: 100%; /* You can adjust the percentage or use a fixed value like "500px" */
+    max-width: 800px; /* Optionally, set a maximum width to limit the size */
+    margin: 0 auto; /* Center the model-viewer within its container */
 }
 
 /*.Hotspot{
