@@ -52,13 +52,10 @@ model-viewer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed based on your layout */
+    height: 500vh; /* Adjust as needed based on your layout */
+    width: 400vh;
 }
 
-.model-viewer {
-    width: 100%; /* Set to full width */
-    max-width: 800px; /* Optionally, set a maximum width to limit the size */
-}
 
 /*.Hotspot{
     background color:white
