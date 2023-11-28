@@ -39,21 +39,8 @@ model-viewer {
     margin: 0;
 }
 .product-card img {
-    width: 100%;
-}
-
-model-viewer {
-    width: 100%; /* You can adjust the percentage or use a fixed value like "500px" */
-    max-width: 800px; /* Optionally, set a maximum width to limit the size */
-    margin: 0 auto; /* Center the model-viewer within its container */
-}
-
-.model-viewer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500vh; /* Adjust as needed based on your layout */
-    width: 400vh;
+    width: 800px;
+    height: 600px;
 }
 
 
