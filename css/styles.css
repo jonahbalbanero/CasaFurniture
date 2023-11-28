@@ -48,6 +48,18 @@ model-viewer {
     margin: 0 auto; /* Center the model-viewer within its container */
 }
 
+.model-viewer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed based on your layout */
+}
+
+.model-viewer {
+    width: 100%; /* Set to full width */
+    max-width: 800px; /* Optionally, set a maximum width to limit the size */
+}
+
 /*.Hotspot{
     background color:white
     colours:
