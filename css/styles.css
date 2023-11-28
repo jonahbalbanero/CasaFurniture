@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(232, 227, 217);
-    color: #686868;
+    color: #000000;
 }
  
 model-viewer {
@@ -11,6 +11,9 @@ model-viewer {
     --progress-bar-color: rgba(255, 255, 255, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero {
