@@ -11,6 +11,8 @@ model-viewer {
     --progress-bar-color: rgba(255, 255, 255, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
+    width: 800px;
+    height: 800px;
 }
 
 .hero {
