@@ -53,15 +53,39 @@
             </model-viewer>
             
 
-            <model-viewer src="./models/Sofa_(White).glb"
-            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-            alt="A 3D model of an astronaut"
-            ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 100%;"
-            scale="2">
-    
+            <h1>CASA SOFA</h1>
+            <model-viewer src="./models/Sofa_(Beige).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate id="color" camera-controls touch-action="pan-y" interaction-prompt="none">
+                
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.2186079083582701m 0.7372877582150645m 0.33511706725524865m" data-normal="0.826621507403026m 0.561137531259728m -0.04267967327062339m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Leather</div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-2" data-position="0.24361710480403548m 0.06721172148263876m -0.7635966790372155m" data-normal="0.7918534401387729m -0.00923819328329408m 0.6106412900592716m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Maple Wood</div>
+                </button>
+                
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+
+                <style>
+                    model-viewer {
+                    width: 800px;
+                    height: 600px;
+                    align-items: center;
+                    }
+                </style>
+
+                <div class="controls" id="color-controls">
+                    <button data-color="">Oak</button>
+                    <button data-color="#000000">Dark</button>
+                    <button data-color="#774930">Mahogany</button>
+                </div>
+
             </model-viewer>
 
             <model-viewer src="./models/Lamp (White).glb"
