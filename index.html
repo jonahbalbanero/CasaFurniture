@@ -54,7 +54,7 @@
             
 
             <h1>CASA SOFA</h1>
-            <model-viewer src="./models/Sofa_(Beige).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate id="color" camera-controls touch-action="pan-y" interaction-prompt="none">
+            <model-viewer src="./models/Sofa_(White).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate id="color" camera-controls touch-action="pan-y" interaction-prompt="none">
                 
                 <button class="Hotspot" slot="hotspot-1" data-position="-0.2186079083582701m 0.7372877582150645m 0.33511706725524865m" data-normal="0.826621507403026m 0.561137531259728m -0.04267967327062339m" data-visibility-attribute="visible">
                     <div class="HotspotAnnotation">Leather</div>
@@ -88,15 +88,38 @@
 
             </model-viewer>
 
-            <model-viewer src="./models/Lamp (White).glb"
-            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-            alt="A 3D model of an astronaut"
-            ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 100%;"
-            scale="2">
-    
+            <h1>CASA LAMP</h1>
+            <model-viewer src="./models/Lamp (White).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate id="color" camera-controls touch-action="pan-y" interaction-prompt="none">
+                
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.04848397152558033m 0.7443582811206735m -0.11320968645941083m" data-normal="-0.38249491528034807m 0.03164870511621934m -0.9234153990751649m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Terrazo Print</div>
+                    
+                </button><button class="Hotspot" slot="hotspot-2" data-position="-0.031575571334642255m 0.3853189863752111m -0.05403507813997308m" data-normal="-0.26405353823383815m 0.18537192554311954m -0.9465267973843252m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Pine Wood</div>
+                </button>
+                
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+
+                <style>
+                    model-viewer {
+                    width: 800px;
+                    height: 600px;
+                    align-items: center;
+                    }
+                </style>
+
+                <div class="controls" id="color-controls">
+                    <button data-color="">Oak</button>
+                    <button data-color="#000000">Dark</button>
+                    <button data-color="#774930">Mahogany</button>
+                </div>
+
             </model-viewer>
         </div>
 
