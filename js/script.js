@@ -5,3 +5,8 @@ document.querySelector('#color-controls').addEventListener('click', (event) => {
   const [material] = modelViewerColor.model.materials;
   material.pbrMetallicRoughness.setBaseColorFactor(colorString);
 });
+
+function loadChairVariant(variantSrc) {
+    const chairViewer = document.getElementById('chairViewer');
+    chairViewer.src = `./models/${variantSrc}`;
+};
