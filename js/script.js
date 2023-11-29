@@ -1,3 +1,5 @@
+// script.js
+
 const modelViewerColor = document.querySelector("model-viewer#color");
 
 // 1. Explore Different Interactions with Hotspots
@@ -16,6 +18,10 @@ document.querySelectorAll('.controls button').forEach(button => {
         material[0] = hexToRgb(colorString).r / 255;
         material[1] = hexToRgb(colorString).g / 255;
         material[2] = hexToRgb(colorString).b / 255;
+
+        // Ensure that the model updates
+        modelViewerColor.model.materials[0].pbrMetallicRoughness.baseColorFactor = material;
+        modelViewerColor.dispatchEvent(new CustomEvent('load'));
     });
 });
 
@@ -41,4 +47,5 @@ document.querySelector('#reset-view').addEventListener('click', () => {
     modelViewerColor.cameraOrbit = '0deg 90deg 2m';
     modelViewerColor.cameraTarget = '0m 0.5m 0m';
 });
+
 
