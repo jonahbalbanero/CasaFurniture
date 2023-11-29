@@ -28,21 +28,28 @@
             </div>
 
         <div class="product-card">
-            <model-viewer src="./models/Chair1.0_(White).glb"
-            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-            alt="A 3D model of an astronaut"
-            ar
-            auto-rotate
-            camera-controls
-            style="width: 100%; height: 100%;"
-            scale="2">
-    
+            <model-viewer src="Chair1.0_(White).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate>
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.1760586216807145m 0.5173986328893301m -0.20650072997981847m" data-normal="0.07813855462065124m 0.7826886535098893m 0.6174891399439121m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Leather</div>
+                </button><button class="Hotspot" slot="hotspot-2" data-position="0.34392269062021186m 0.29341210822006214m 0.36812645350684875m" data-normal="0.035158554724900266m 0.0671166201550873m 0.9971254862496567m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Oak Wood</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div>
             </model-viewer>
+            
 
             <model-viewer src="./models/Sofa_(White).glb"
             ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
             alt="A 3D model of an astronaut"
-            ar
+            ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"
             auto-rotate
             camera-controls
             style="width: 100%; height: 100%;"
@@ -53,7 +60,7 @@
             <model-viewer src="./models/Lamp (White).glb"
             ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
             alt="A 3D model of an astronaut"
-            ar
+            ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"
             auto-rotate
             camera-controls
             style="width: 100%; height: 100%;"
