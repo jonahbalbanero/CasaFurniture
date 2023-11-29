@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(../img/stone-texture.jpg);
-    color: #000000;
+    color: #774930;
 }
  
 model-viewer {
     --poster-color: transparent;
-    --progress-bar-color: rgba(255, 255, 255, 0.5);
+    --progress-bar-color: rgba(153, 125, 93, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
     width: 800px;
